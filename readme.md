@@ -1,22 +1,22 @@
-Example project for testing node with docker
+# Example project for testing node with docker
 
-# build docker image
+## build docker image
 docker build -t <your username>/node_docker .
 
-# view docker images
+## view docker images
 docker images
 
-# run the image (optional port)
+## run the image (optional port)
 docker run -p 49160:8080 -d <your username>/node_docker
 
-# test app
+## test app
 curl -i localhost:49160
 
-# see running containers
+## see running containers
 docker ps
 
-# see logs
+## see logs
 docker logs <container id>
 
-# go inside container
+## go inside container
 docker exec -it <container id> /bin/bash
